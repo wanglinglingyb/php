@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h3>在输入框中尝试输入字母(a-z)</h3><br>
+  输入字母：<input type="text" value="" id="word"><br>
+  提示信息：<span id="txtHint"></span>
+  <script>
+    function showHint(str){
+      // console.log(str);
+      var xmlhttp;
+      if(str.length==0){
+        document.getElementById('txtHint').innerHTML='';
+        return;
+      }
+      if(window.XMLHttpRequest){
+        xmlhttp=new XMLHttpRequest();
+      }else{
+        xmlhttp=new ActiveXObnect('Microsoft.XMLHttp');
+      }
+      xmlhttp.onreadystatechange=function(){
+        if(xmlhttp.readyState==4 && xmlhttp.states==200){
+          document.getElementById('txtHint').innerHTML=xmlhttp.responseText;
+        }
+      }
+      xmlhttp.open('get','021.php?q='+str,true);
+    }
+    var word=document.getElementById('word');
+    word.onkeyup=function(){
+      showHint(this.value);
+    }
+  </script>
+</body>
+</html>

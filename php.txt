@@ -1,0 +1,108 @@
+索引数组的键是_整型__，关联数组的键是__字符串____。
+
+PHP抽象类关键词abstract
+
+PHP不支持多继承
+
+PHP中，继承父类的关键字是extends
+
+define()和const都可以用来定义常量，const可以在类内定义常量，define可以定义全局常量
+
+字符串拆分成一维数组函数explode，一维数组拼接成字符串函数implode，上述两个为字符串函数。数组排序函数sort，数组元素统计函数count，上述两个为数组函数
+
+print_r和var_dump可以用来输出数组，而echo和print不行
+
+mysqli_connect( )不会忽略错误,将错误显示到客户端
+
+MySQLi面向对象连接数据库一般在其实例化的时候连接即new mysqli时
+
+private修饰的属性和方法只能在其所属类的内部被调用和访问
+
+
+
+1、设置session为$_SESSION["user"] = "jack"，注销session，以下哪一个不正确（C ）
+A、unset($_SESSION$["user"] )
+B、$_SESSION = array();
+C、destroy()
+D、session_destroy()
+PHP中不存在destroy函数，session_destory()可以销毁整个session，unset()可以删除指定的session，对$_SESSION进行赋值也可以销毁session
+
+
+
+
+
+
+了解PHP
+是什么?
+PHP是一种流行的通用脚本语言,特别适合于web开发。
+从你的博客到世界上最受欢迎的网站，快速、灵活和实用的PHP为一切提供了动力。
+PHP (“PHP: Hypertext Preprocessor"，超文本预处理器的字母缩写)是一种被广泛应用的开放源代分的多用楚本目言，它可或入到HTML中，尤其适合web 开发。
+能干什么?
+PHP脚本主要用于以下三个领域:
+1.服务端脚本
+2.命今行脚本
+3.桌面应用程序
+第一个程序
+PHP开始标记		<?php
+PHP结束标记		?>
+<?php echo 'Hello world!';?>
+php文件后缀是.php
+搜索PHP的运行环境
+web服务器 apache
+php解析器php
+数据库服务器mysql
+AMP (Apache+MySQL+PHP)
+LAMP (Linux+AMP)
+WAMP (WindowS+AMP)
+PHP环境安装
+集成环境
+phpstudy
+分别安装
+浏览写的第一个程序(能不能双击打开?)    不能
+搜索apache,mysql和php的关系
+网站构成三要素
+1.域名(网址)
+2.空间
+3.源文件
+
+变量
+计算机比较健忘，需要找些小盒子把让计算机处理的东西放进去，并给盒子起名字
+sage = 20;
+$age = $age + 1;
+echo $age;
+小盒子里可以放进东西也可以取出东西
+变量名的命名规范
+一个有效的变量名由字母或者下划线开头，后面跟上任意数量的字母，数字，或者下划线。搜索变量的定义，用自己的话描述什么是变量
+
+运算符
+加减乘除符号就是运算符，计算总和，计算差额，计算平均
+大于小于符号也是运算符，比较大小，判断相同，判断不同
+搜索还有哪些运算符
+算数运算符+ - * / % ++ -- 赋值运算符 = += -= *= /= %= .=
+关系运算符 < > <= >= == != === !==   <>不等于
+逻辑运算符			&&逻辑与  ||逻辑或				!逻辑非
+&&两侧都为true,结果为true,其他结果为false
+两侧都为false,结果为false,其他结果都为true
+字符串连接运算符 .
+
+三大控制结构
+顺序 做面条
+分支 打招呼
+if...
+if...else
+if...elseif...else
+if...else if...else
+switch
+循环办银行卡之“等”
+for
+while
+do. . .while
+搜索还有哪些控制结构
+foreach 遍历数组和对象
+break
+continue
+
+编程三要素
+1.变量
+2.运算符
+3.流程控制结构
